@@ -14,7 +14,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "unorm": "^1.6.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

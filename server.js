@@ -163,13 +163,13 @@ app.post("/receive-lixi", (req, res) => {
         };
 
         // Xác định min/max theo nhóm
-        let min = 13, max = 47; // Mặc định
+        let min = 26, max = 70; // Mặc định
         if (groups.b_friends.includes(normalizedUser)) {
             min = 62;
             max = 101;
         } else if (groups.anh_chi.includes(normalizedUser)) {
-            min = 35;
-            max = 65;
+            min = 40;
+            max = 105;
         }
 
         // Tạo số tiền ngẫu nhiên

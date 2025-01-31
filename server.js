@@ -76,7 +76,7 @@ app.post("/chuc", (req, res) => {
       .nfd(item.user)
       .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase();
-    return normalizedDbName === normalizedInputName;
+    return normalizedDbName === normalizedInputName && item.STK;
   });
 
   if (existingItem) {

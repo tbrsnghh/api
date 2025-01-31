@@ -80,7 +80,7 @@ app.post("/chuc", (req, res) => {
   });
 
   if (existingItem) {
-    return res.status(400).json({ message: "Bạn đã nhận lì xì rồi!" });
+    return res.status(200).json({ message: "đã nhận lì xì -.-", status: "đã nhận" });
   }
 
   // Chuẩn hóa tất cả key trong chucTetTheoTen thành không dấu

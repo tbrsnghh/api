@@ -159,7 +159,7 @@ app.post("/receive-lixi", (req, res) => {
         // Định nghĩa nhóm nhận lì xì
         const groups = {
             b_friends: ["kieu trinh", "trinh tuyen", "minh nhat", "cam my", "thu tuyen"],
-            anh_chi: ["hoang khanh", "nhu tuyet", "hong nguyen", "manh chien"],
+            anh_chi: ["hoang khanh", "nhu tuyet", "hong nguyen", "manh chien", "ngoc diem"],
         };
 
         // Xác định min/max theo nhóm
@@ -169,7 +169,7 @@ app.post("/receive-lixi", (req, res) => {
             max = 101;
         } else if (groups.anh_chi.includes(normalizedUser)) {
             min = 62;
-            max = 105;
+            max = 101;
         }
 
         // Tạo số tiền ngẫu nhiên
